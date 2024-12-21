@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+* {
+    margin:0%;
+    box-sizing: border-box;
+    font-size: "Roboto Slab", serif;
+}
+.sec1 {
+    margin-left: 20px;
+    background: linear-gradient(135deg , #dabac9,#c0a47d);
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    height:100vw;
+
+}
+.one {
+    width:50%;
+    align-items: center;
+}
+.un {
+    text-decoration: none;
+    text-align: end;
+    color:black;
+    margin-right: 35px;
+}
+.one #myform{
+    margin-top: 7%;
+    margin-left: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width:70%;
+    height: 40%;
+}
+.one h1 {
+    margin-top:15px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+#myform label {
+    margin-left: 15px;
+    margin-top: 3%;
+}
+input[type="email"],[type="password"] {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px #dabac9;
+    padding :1%;
+    margin-bottom: 5%;
+    width:50%;
+    margin-left: 15px;
+}
+.button {
+    margin-left: 15px;
+    width: 90%;
+    border-radius: 50px;
+    font-size: 20px;
+    color:white;
+    background: linear-gradient(135deg , #dabac9,#c0a47d);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.button:hover {
+    color:blue;
+    background-color: white;
+    border: 1.5px solid blue;
+}
+.web:hover {
+    color:blue;
+    background-color: white;
+    border: 1.5px solid blue;
+}
+.hi {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 14px;
+}
+.hi a{
+    text-decoration: none;
+    color:black;
+}
+.big {
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <center><h2>{{ message }}</h2></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
+<body>
+    <section class="sec1">
+    <div class="one">
+    <form method="POST" id="myform"><br><br>
+    <h1>Login An User Account</h1><br><br><br>
+    <label><b>User Email</b></label><br>
+    <input type="email" name="email" placeholder='hsgdhg@gmail.com' class="email"/>
+    <label><b>password</b></label><br>
+    <input type="password" placeholder="hi@123" class="password" name="password"/>
+    <a href="#" class="un"><b>Forgot password</b></a></h4><br>
+    <button class="button">submit</button>
+    <a href="./create.html" class="big"> Create Acccount</a><br/>
+    </form>
+</div>
+</section>
+</body>
+</html>
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    

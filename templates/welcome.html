@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=width">
+    <title>Welcome</title>
+    <style>
+        * {
+    margin:0%;
+    box-sizing: border-box;
+    font-size: "Roboto Slab", serif;
+}
+.sec1 {
+    margin-left: 20px;
+    background: linear-gradient(135deg , #dabac9,#c0a47d);
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    height:100vw;
+}
+.one {
+    width:50%;
+    align-items: center;
+}
+.one #myform{
+    margin-top: 15%;
+    margin-left: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff ;
+    width:70%;
+    height: 20%;
+}
+#hi {
+    margin-top:15px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+#myform label {
+    margin-left: 15px;
+    margin-top: 3%;
+}
+input[type="text"],[type="email"],[type="password"]{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px #dabac9;
+    padding :1%;
+    margin-bottom: 5%;
+    width:50%;
+    margin-left: 15px;
+}
+.button {
+    margin-left: 15px;
+    width: 90%;
+    border-radius: 50px;
+    font-size: 20px;
+    color:white;
+    background: linear-gradient(135deg , #dabac9,#c0a47d);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.button {
+    margin-left: 15px;
+    width: 90%;
+    border-radius: 50px;
+    font-size: 20px;
+    color:white;
+    background: linear-gradient(135deg , #dabac9,#c0a47d);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.button:hover {
+    color:blue;
+    background-color: white;
+    border: 1.5px solid blue;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+    </style>
+</head>
+<body>
+    <section class="sec1">
+    <div class="one">
+    <div id="myform"><br><br>
+    <center>
+    <h1>Welcome to Simple Notes Application</h1><br><br><br>
+    <a href="{{url_for('create')}}"><button class="button">Register</button></a>
+    <a href="{{url_for('login')}}"><button class="button">Login</button></a>
+    </center>
+    </div>
+    </div>
+    </section>
+</body>
+</html>
